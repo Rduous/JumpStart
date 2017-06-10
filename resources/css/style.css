@@ -7,11 +7,22 @@ body, html {
   color: #399bd1 !important;
 }
 
+.image-container img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
 /* jumbotron */
 .jumbotron {
-  background: url("../images/jumbotron-bike.jpg");
   text-align: center;
   color: white;
+}
+
+.jumbotron-bike {
+  background: url("../images/jumbotron-bike.jpg");
 }
 
 .jumbotron h1 {
