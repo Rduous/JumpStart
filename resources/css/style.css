@@ -26,6 +26,11 @@ h3 {
   font-weight: bold;
 }
 
+.button {
+  margin: auto  !important;
+  padding: 1.3rem 0;
+  width: 11.4rem !important;
+}
 
 /* jumbotron */
 
@@ -58,4 +63,19 @@ h3 {
 /* Projects section */
 .projects {
   margin-bottom: 5.85rem;
+}
+
+/* Having trouble section */
+.trouble {
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+.trouble strong {
+  font-size: 2.5rem;
+}
+
+.trouble p {
+  width: 42rem;
+  margin: auto;
 }
