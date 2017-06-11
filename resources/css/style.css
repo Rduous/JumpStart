@@ -36,30 +36,53 @@ h3 {
 }
 
 .button {
-  margin-top: 2.8rem  !important;
-  padding: 1.3rem 0;
-  width: 11.4rem !important;
   background-color: #399bd1 !important;
-  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  margin: 2.8rem auto 0 auto !important;
+  /*margin-top: 2.8rem !important;*/
+  padding: 1.3rem 0;
+  text-align: center;
+  width: 11.4rem !important;
 }
 
 .button:hover {
-  box-shadow: 0 0 12px rgba(0,0,0,0.9);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
 }
 
 .button:active {
-  box-shadow: 0 0 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
+
 
 /* jumbotron */
 
+#jumbotron-section {
+  /*position: absolute;*/
+  height: 52rem;
+}
+
 .jumbotron {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   color: white;
 }
 
 .jumbotron-bike {
-  background: url("../images/jumbotron-bike.jpg");
+  background-image: url("../images/jumbotron-bike.jpg");
+}
+
+.jumbotron-beer {
+  background-image: url("../images/jumbotron-beer.jpg");
+}
+
+.jumbotron-flowers {
+  background-image: url("../images/jumbotron-flowers.jpg");
+}
+
+.jumbotron-duffel {
+  background-image: url("../images/jumbotron-duffel.jpg");
 }
 
 .jumbotron h1 {
@@ -67,35 +90,46 @@ h3 {
   font-family: Monoton;
   padding-top: 11.85rem;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-transform: uppercase;
 }
 
 .jumbotron p {
   max-width: 51.3rem;
   margin: auto;
+  padding-bottom: 18.45rem;
+}
+
+#button-wrapper {
+  position: relative;
+  bottom: 22.85rem;
 }
 
 @media only screen and (max-width: 750px) {
   .jumbotron h1 {
     font-size: 5.7rem;
   }
-
   .jumbotron p {
     margin: auto 1rem;
   }
-
 }
 
+
 /* Featured section */
+
 .featured h2 {
   margin-bottom: 20px;
 }
 
+
 /* Projects section */
+
 .projects {
   margin-bottom: 5.85rem;
 }
 
+
 /* Having trouble/footer section */
+
 footer {
   background-color: #f3f3f3;
   padding: 5.2rem 1rem;
