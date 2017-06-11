@@ -51,8 +51,19 @@ h3 {
 }
 
 .jumbotron p {
-  width: 51.3rem;
+  max-width: 51.3rem;
   margin: auto;
+}
+
+@media only screen and (max-width: 750px) {
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+
+  .jumbotron p {
+    margin: auto 1rem;
+  }
+
 }
 
 /* Featured section */
