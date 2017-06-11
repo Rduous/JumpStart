@@ -12,20 +12,15 @@ $(document).ready(function() {
 
   // Navbar/scroll behavior
   var verticalScroll = 0;
-
   $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
-    if (scrollTop - 50 > verticalScroll) {
+    if (scrollTop - verticalScroll > 50) {
       var navBarHeight = $('.navbar').css('height');
-      $('.navbar').animate({
-        top: '-' + navBarHeight
-      }, 150);
-    } else if (verticalScroll - 50 > scrollTop) {
-      $('.navbar').animate({
-        top: 0
-      }, 150);
+      $('.navbar').animate({top: '-' + navBarHeight}, 150);
+      verticalScroll = scrollTop;
+    } else if (verticalScroll - scrollTop > 50) {
+      $('.navbar').animate({top: '0px'}, 150);
+      verticalScroll = scrollTop;
     }
-    verticalScroll = scrollTop;
   });
-
 });
