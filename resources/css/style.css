@@ -53,11 +53,15 @@ h3 {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
+/* Header section */
+.navbar a {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 
-/* jumbotron */
+/* jumbotron section */
 
 #jumbotron-section {
-  /*position: absolute;*/
   height: 52rem;
 }
 
@@ -118,6 +122,11 @@ h3 {
 
 .featured h2 {
   margin-bottom: 20px;
+}
+
+.featured ul {
+  color: rgba(0,0,0,0.7);
+  line-height: 1.4em;
 }
 
 
